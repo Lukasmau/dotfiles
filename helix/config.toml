@@ -1,0 +1,10 @@
+[editor.inline-diagnostics]
+cursor-line = "warning"
+other-lines = "error"
+
+[keys.normal."\\"]
+r = [":write-all", ":sh zellij action move-focus right && zellij action write-chars 'cargo run' && zellij action write 13 && zellij action move-focus left"]
+c = [":write-all", ":sh zellij action move-focus right && zellij action write-chars 'cargo clippy' && zellij action write 13 && zellij action move-focus left"]
+b = [":write-all", ":sh zellij action move-focus right && zellij action write-chars 'cargo build' && zellij action write 13 && zellij action move-focus left"]
+t = [":write-all", ":sh zellij action move-focus right && zellij action write-chars 'cargo test' && zellij action write 13 && zellij action move-focus left"]
+f = [":write-all", ":sh zellij action move-focus right && zellij action write-chars 'cargo fmt' && zellij action write 13 && zellij action move-focus left"]
